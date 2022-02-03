@@ -1,0 +1,7 @@
+config {
+  type: "table"
+}
+
+SELECT *
+FROM bigquery-public-data.iowa_liquor_sales.sales
+LIMIT 10

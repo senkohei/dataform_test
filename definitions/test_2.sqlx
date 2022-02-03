@@ -1,0 +1,7 @@
+config {
+  type: "table"
+}
+
+select *
+from ${ref("test_table")}
+limit 5
