@@ -1,0 +1,12 @@
+config {
+  type: "table"
+}
+
+WITH sales AS (
+SELECT *
+FROM ${ref("iowa_sales")}
+)
+SELECT date, sum(sale_dollars) AS sale_dollars_sum
+FROM sales
+GROUP BY 1
+ORDER BY 1
