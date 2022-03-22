@@ -1,0 +1,6 @@
+config {
+  type: "declaration",
+  database: "bigquery-public-data",
+  schema: "iowa_liquor_sales",
+  name: "sales"
+}

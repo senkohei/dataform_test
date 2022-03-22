@@ -12,6 +12,20 @@
             "fullRefresh": false,
             "includeDependents": false
           }
+        },
+        {
+          "name": "new_schedule",
+          "cron": "10 11 * * *"
+        }
+      ],
+      "gitRef": "master"
+    },
+    {
+      "name": "develop",
+      "schedules": [
+        {
+          "name": "new_schedule",
+          "cron": "20 8 * * *"
         }
       ],
       "gitRef": "master"
