@@ -6,16 +6,13 @@
       "schedules": [
         {
           "name": "iowa_sales_job",
-          "cron": "17 */1 * * *",
+          "cron": "17 * * * *",
           "options": {
-            "includeDependencies": false,
+            "includeDependencies": true,
             "fullRefresh": false,
-            "includeDependents": false
-          }
-        },
-        {
-          "name": "new_schedule",
-          "cron": "10 11 * * *"
+            "includeDependents": true
+          },
+          "disabled": false
         }
       ],
       "gitRef": "master"
@@ -25,7 +22,8 @@
       "schedules": [
         {
           "name": "new_schedule",
-          "cron": "20 8 * * *"
+          "cron": "20 8 * * *",
+          "disabled": true
         }
       ],
       "gitRef": "master"
