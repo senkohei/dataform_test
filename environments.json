@@ -3,29 +3,10 @@
     {
       "name": "production",
       "configOverride": {},
-      "schedules": [
-        {
-          "name": "iowa_sales_job",
-          "cron": "17 * * * *",
-          "options": {
-            "includeDependencies": true,
-            "fullRefresh": false,
-            "includeDependents": true
-          },
-          "disabled": false
-        }
-      ],
       "gitRef": "master"
     },
     {
       "name": "develop",
-      "schedules": [
-        {
-          "name": "new_schedule",
-          "cron": "20 8 * * *",
-          "disabled": true
-        }
-      ],
       "gitRef": "master"
     }
   ]
